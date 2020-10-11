@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <title>Picture Game</title>
+</head>
+
+<body onload="getHomeMenu()">
+    <h1>WHERE IN THE WORLD?</h1>
+    <div class="menu">
+        <div class="score"></div>
+        <div class="play" onclick="init()">PLAY!</div>
+    </div>
+    <div class="container">
+        <h2>IS THIS</h2>
+        <div class="image"></div>
+        <div class="quest-container">
+            <div class="q0-1">
+                <div class="quest q0" onclick="checkAnswer(0)"></div>
+                <div class="quest q1" onclick="checkAnswer(1)"></div>
+            </div>
+            <div class="q2-3">
+                <div class="quest q2" onclick="checkAnswer(2)"></div>
+                <div class="quest q3" onclick="checkAnswer(3)"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
